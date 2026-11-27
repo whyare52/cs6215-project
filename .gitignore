@@ -1,0 +1,8 @@
+.lake/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+/case-studies/apps/
+/specs/
+checker/.venv/
+/case-studies/venvs/

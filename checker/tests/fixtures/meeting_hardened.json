@@ -1,0 +1,8 @@
+{
+  "agents": ["Alice", "Bob", "Carol", "Mallory"],
+  "boards": {"b0": ["Alice", "Bob"], "b1": ["Carol", "Mallory"]},
+  "owner": {"vAlice": "Alice", "vBob": "Bob", "vCarol": "Carol", "vMallory": "Mallory"},
+  "sees": "own",
+  "echo_sees": "none",
+  "adversary": {"controls": ["Mallory"], "injects": []}
+}
