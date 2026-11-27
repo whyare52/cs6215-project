@@ -37,7 +37,7 @@ uv run python -m unittest discover -s tests
 makes most tests skip themselves.
 
 The tests of a case study skip themselves when its clone or venv is missing, so the number of
-skips depends on step 3. Before step 3 the run ends with `OK (skipped=30)` or so. After every
+skips depends on step 3. Before step 3 the run ends with `OK (skipped=44)`. After every
 case study is set up it ends with
 
 ```
@@ -57,7 +57,7 @@ where the two skipped tests need a Postgres server.
 
 `run-case-study.sh` sets its case study up first if needed, so the first line is optional.
 Setting up every case study clones ten applications and builds a venv for each, which takes
-tens of minutes and several gigabytes.
+about 6 GB of disk and, on a first run with nothing cached, tens of minutes.
 
 The applications pin different versions of the same packages, such as LangGraph, so
 each case study gets its own venv in `case-studies/venvs/`, built from its
