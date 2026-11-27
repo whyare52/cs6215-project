@@ -1,4 +1,4 @@
-# ToolName
+# A checker for cross-user leaks in LangGraph applications
 
 A checker that a LangGraph application keeps its users apart. It runs the application with a
 marker-copying fake LLM, lifts the runs into a protocol configuration, reports every agent of a
@@ -39,7 +39,7 @@ gitignored, and the scripts below make and use them, so you never call a venv yo
 | Yuxi | `yuxi` | Q1, leak and fix (#594) |
 | aegra | `aegra` | Q1, leak and fix (#275, #276) |
 | aegra, thread ownership | `aegra_threads` | Q1, leak and fix (#336, #337), needs Docker |
-| Aix-DB | `aix_db` | Q1, leak and fix |
+| Aix-DB | `aix_db` | Q2, false positive |
 | open_deep_research | `open_deep_research` | Q2, no known bug |
 | agent-service-toolkit | `agent_service_toolkit` | Q2, sharing by design |
 | executive-ai-assistant | `executive_ai_assistant` | Q2, new finding |
